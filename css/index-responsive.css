@@ -1,0 +1,207 @@
+@media screen and (max-width: 1000px) {
+   .divTwo .firstSec .courseSec, .divThree .firstSec .imgSec, .divFour .firstSec .subSec{
+      width: 45%;
+   }
+
+   .divThree .firstSec .imgSec::after{
+      top: 0%;
+      opacity: 1;
+   }
+}
+
+
+@media screen and (max-width: 900px) {
+   .coverDiv .mainHeader .navItems{
+      width: 0%;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      padding-block: 20px;
+      transition: 0.5s;
+      z-index: 5;
+   }
+
+   .coverDiv .mainHeader .hamburgerIcon{
+      display: flex;
+   }
+}
+
+
+@media screen and (max-width: 700px) {
+   .coverDiv .mainDiv .mainSec>h1{
+      font-size: 60px;
+   }
+
+   .coverDiv .mainDiv .mainSec>p{
+      font-size: 1.2rem;
+   }
+
+   .divTwo .firstSec .courseSec, .divThree .firstSec .imgSec, .divFour .firstSec .subSec{
+      width: 70%;
+   }
+
+   .divFive .firstSec .subSec{
+      width: 77%;
+   }
+
+   .divFive .firstSec .subSec:first-child{
+      margin-left: 220%;
+   }
+
+}
+
+
+@media screen and (max-width: 600px){
+   .coverDiv .mainDiv .mainSec>h1{
+      font-size: 50px;
+   }
+}
+
+
+@media screen and (max-width: 500px){
+   :root{
+      --rem2: 1.9rem; 
+      --rem1-3: 1.2rem;
+      --rem1-1: 1rem;
+      --rem1-05: 0.95rem;
+   }
+
+   .coverDiv .mainHeader{
+      padding-inline: max(5%, 30px);
+   }
+
+   .coverDiv .mainDiv .mainSec>h1{
+      font-size: 43px;
+   }
+
+   .coverDiv .mainDiv .mainSec>p{
+      font-size: 1rem;
+   }
+
+   .divTwo .firstSec .courseSec, .divThree .firstSec .imgSec, .divFour .firstSec .subSec{
+      width: 90%;
+   }
+
+   .divTwo .firstSec .courseSec{
+      margin-bottom: 20px;
+   }
+
+}
+
+
+@media screen and (max-width: 400px){
+   .coverDiv .mainHeader .logoSec>i{
+      font-size: x-large;
+   }
+
+   .coverDiv .mainHeader .logoSec>span{
+      font-size: medium;
+   }
+
+   .coverDiv .mainHeader .hamburgerIcon>i{
+      font-size: large;
+   }
+
+   .coverDiv .mainDiv .mainSec>h1{
+      font-size: 37px;
+   }
+
+   .divTwo>section, .divThree>section, .divFour>section, .divFive>section, .divSeven>section{
+      width: 90%;
+   }
+
+   .divFive .firstSec .subSec{
+      flex-direction: column-reverse;
+   }
+
+   .divFive .firstSec .subSec .quoteSec{
+      width: 100%;
+
+   }
+
+   .divFive .firstSec .subSec .quoteSec>p{
+      font-size: small;
+   }
+
+   .divFive .firstSec .subSec .imgSec{
+      margin-top: 5px;
+   }
+
+   .divFive .firstSec .subSec .imgSec{
+      width: 40px;
+      height: 40px;
+   }
+
+}
+
+
+@media screen and (max-width:350px){
+   .coverDiv .mainHeader{
+      padding-inline: max(5%, 20px);
+   }
+
+   .coverDiv .mainDiv .mainSec>h1{
+      font-size: 32px;
+   }
+
+   .coverDiv .mainDiv .mainSec>p{
+      padding-block: 15px;
+   }
+
+   .coverDiv .mainDiv .mainSec>a{
+      padding: 8px 40px 8px;
+   }
+
+   .divTwo .firstSec .courseSec, .divThree .firstSec .imgSec, .divFour .firstSec .subSec{
+      width: 100%;
+   }
+
+}
+
+
+@media screen and (max-width:300px){
+   .coverDiv .mainDiv .mainSec>h1{
+      font-size: 30px;
+   }
+
+   .coverDiv .mainDiv .mainSec>p{
+      font-size: 1rem;
+   }
+
+   .coverDiv .mainDiv .mainSec>a{
+      padding: 7px 30px 7px;
+   }
+
+   .divSeven .firstSec>a{
+      margin-inline: 5px;
+   }
+
+}
+
+
+@media screen and (max-width:280px){
+   .coverDiv .mainDiv .mainSec>h1{
+      font-size: 28px;
+   }
+}
+
+
+
+
+@media screen and (max-height:400px){
+   .coverDiv .mainDiv .mainSec{
+      margin-block: 25%;
+   }
+
+   @keyframes topSlide {
+      from{margin-top: -20%; opacity: 0;}
+      to{margin-top: 25%; opacity: 1;}
+   
+      
+   }
+
+   
+}

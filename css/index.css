@@ -1,0 +1,694 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+
+:root{
+   --overlayColor: rgba(0, 0, 0, 0.7);
+   --rem2: 2rem; 
+   --rem1-3: 1.3rem;
+   --rem1-1: 1.1rem;
+   --rem1-05: 1.05rem;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+   color: gray;
+}
+
+
+/* Div one starts ========================== */
+.coverDiv{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   background: url(../img/building-3.jpg) fixed no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.coverDiv .mainHeader{
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.7);
+   padding-inline: max(5%, 50px);
+   padding-top: 10px;
+}
+
+.coverDiv .mainHeader .logoSec{
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.coverDiv .mainHeader .logoSec>i{
+   font-size: xx-large;
+   color: red;
+}
+
+.coverDiv .mainHeader .logoSec>span{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   color: white;
+   padding-left: 5px;
+   font-size: large;
+}
+
+.coverDiv .mainHeader .navItems{
+   width: auto;
+   height: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.coverDiv .mainHeader .navItems>span{
+   position: relative;
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.coverDiv .mainHeader .navItems>span>a{
+   color: white;
+   text-decoration: none;
+   padding: 10px 15px 10px;
+   font-weight: bold;
+}
+
+.coverDiv .mainHeader .navItems>span>a::after{
+   content: " ";
+   width: 0%;
+   height: 5%;
+   background-color: red;
+   position: absolute;
+   bottom: 0;
+   right: 0%;
+   transition: 0.5s;
+}
+
+.coverDiv .mainHeader .navItems>span:hover>a::after{
+   left: 0%;
+   width: 95%;
+}
+
+.coverDiv .mainHeader .hamburgerIcon{
+   display: none;
+   width: auto;
+   height: auto;
+   color: white;
+}
+
+.coverDiv .mainHeader .hamburgerIcon>i{
+   font-size: x-large;
+}
+
+.coverDiv .mainDiv{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: calc(100vh - 80px);
+   background-color: rgba(0, 0, 0, 0.7);
+   position: relative;
+}
+
+.coverDiv .mainDiv .mainSec{
+   width: 80%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: white;
+   animation: topSlide 1s ease-out;
+}
+
+@keyframes topSlide {
+   from{margin-top: -20%; opacity: 0;}
+   to{margin-top: 0%; opacity: 1;}
+
+   
+}
+
+.coverDiv .mainDiv .mainSec>h1{
+   font-size: 70px;
+   text-align: center;
+}
+
+.coverDiv .mainDiv .mainSec>p{
+   width: 80%;
+   font-size: 1.5rem;
+   text-align: center;
+   padding-block: 10px;
+   font-weight: lighter;
+   color: white;
+}
+
+.coverDiv .mainDiv .mainSec>a{
+   text-decoration: none;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+   position: relative;
+   z-index: 2;
+   color: white;
+   padding: 10px 50px 10px;
+   margin-top: 8px;
+   text-decoration: none;
+   color: white;
+   border: 2px solid white;
+}
+
+.coverDiv .mainDiv .mainSec>a::before{
+   content: " ";
+   width: 0%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   background-color: white;
+   z-index: -1;
+   transition: 0.5s;
+}
+
+.coverDiv .mainDiv .mainSec>a::after{
+   content: " ";
+   width: 0%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   right: 50%;
+   background-color: white;
+   z-index: -1;
+   transition: 0.5s;
+}
+
+.coverDiv .mainDiv .mainSec>a:hover{
+   color: black;
+}
+
+.coverDiv .mainDiv .mainSec>a:hover::before, .coverDiv .mainDiv .mainSec>a:hover::after{
+   width: 50%;
+}
+/* Div one ends ========================== */
+
+
+/* Div Two starts ========================== */
+.divTwo{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-block: 50px;
+   /* border: 1px solid red; */
+}
+
+.divTwo>section{
+   width: 85%;
+   /* border: 1px solid red; */
+}
+
+
+/* General Heading Sec ================== */
+.headingSec{
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.headingSec>h1{
+   width: 100%;
+   text-align: center;
+   font-size: var(--rem2);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-bottom: 5px;
+}
+
+.headingSec>h1 .highlight{
+   color: red;
+   /* background: linear-gradient(20deg, rgba(255, 0, 0, 1) , rgba(0, 0, 255, 1));
+   -webkit-background-clip: text;
+   color: transparent;
+   transition: 0.5s; */
+}
+
+.headingSec>p{
+   font-size: var(--rem1-1);
+}
+/* General Heading Sec ================== */
+
+
+.divTwo .firstSec{
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 30px;
+}
+
+.divTwo .firstSec .courseSec{
+   width: 30%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.05);
+   padding: 20px;
+   padding-block: 30px;
+   border: 0.5px solid silver;
+   border-radius: 10px;
+   margin: 1.66%;
+   transition: 0.5s;
+}
+
+.divTwo .firstSec .courseSec:hover{
+   box-shadow: 0px 5px 10px silver;
+   margin-top: -1%;
+}
+
+.divTwo .firstSec .courseSec>h3{
+   font-size: var(--rem1-3);
+   position: relative;
+   padding-bottom: 8px;
+}
+
+.divTwo .firstSec .courseSec>h3::after{
+   content: " ";
+   width: 50%;
+   height: 5%;
+   position: absolute;
+   bottom: 0%;
+   left: 20%;
+   background-color: red;
+}
+
+.divTwo .firstSec .courseSec>p{
+   width: 95%;
+   margin-top: 20px;
+   text-align: center;
+   font-size: var(--rem1-05);
+}
+/* Div Two ends ========================== */
+
+
+
+/* Div Three starts ========================== */
+.divThree{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-block: 50px;
+}
+
+.divThree>section{
+   width: 85%;
+}
+
+.divThree .firstSec{
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 30px;
+}
+
+.divThree .firstSec .imgSec{
+   width: 30%;
+   height: 450px;
+   margin: 1.66%;
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+   transition: 0.5s;
+   
+}
+
+.divThree .firstSec .imgSec>img{
+   position: absolute;
+   width: 200%;
+   min-height: 100%;
+   top: 0;
+   left: -50%;
+   transition: 0.5s;
+}
+
+.divThree .firstSec .imgSec::after{
+   content: var(--university);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 100%;
+   left: 0%;
+   background-color: rgba(0, 0, 0, 0.3);
+   transition: 0.8s;
+   opacity: 0;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+
+.divThree .firstSec .imgSec:hover::after{
+   opacity: 1;
+   top: 0%;
+}
+
+
+/* Div Three ends ========================== */
+
+
+/* Div Four starts ========================== */
+.divFour{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-block: 50px;
+}
+
+.divFour>section{
+   width: 85%;
+}
+
+.divFour .firstSec{
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   margin-top: 30px;
+}
+
+.divFour .firstSec .subSec{
+   width: 30%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 1.66%;
+}
+
+.divFour .firstSec .subSec .imgSec{
+   width: 100%;
+   height: 300px;
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+}
+
+.divFour .firstSec .subSec .imgSec>img{
+   position: absolute;
+   width: 100%;
+   min-height: 100%;
+   top: 0;
+   left: 0%;
+   object-fit: cover;
+}
+
+.divFour .firstSec .subSec>h3{
+   width: 100%;
+   text-align: left;
+   padding-top: 15px;
+   padding-bottom: 8px;
+   font-size: var(--rem1-3);
+}
+
+.divFour .firstSec .subSec>p{
+   font-size: var(--rem1-05);
+   padding-bottom: 20px;
+}
+/* Div Four ends ========================== */
+
+
+/* Div Five starts ========================== */
+.divFive{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-block: 50px;
+}
+
+.divFive>section{
+   width: 85%;
+}
+
+.divFive .firstSec{
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   margin-top: 30px;
+   
+   flex-wrap: nowrap;
+   overflow-x: auto;
+   overflow-y: hidden;
+   cursor: grab;
+
+   scroll-snap-type: inline mandatory;
+}
+
+.divFive .firstSec > *{
+   scroll-snap-align: center; /*or start */
+}
+
+.divFive .firstSec .subSec:first-child{
+   margin-left: 85%;
+}
+
+
+.divFive .firstSec::-webkit-scrollbar{
+   display: none;
+}
+
+.divFive .firstSec .subSec{
+   width: 43%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   margin: 1.5%;
+   padding: 15px 20px 15px;
+   border-radius: 10px;
+   background-color: rgba(255, 0, 0, 0.05);
+   flex-shrink: 0;
+}
+
+.divFive .firstSec .subSec .imgSec{
+   width: 50px;
+   height: 50px;
+   margin-right: 15px;
+   border-radius: 50%;
+   overflow: hidden;
+   position: relative;
+}
+
+.divFive .firstSec .subSec .imgSec>img{
+   position: absolute;
+   top: 0%;
+   width: 100%;
+   height: fit-content;
+}
+
+.divFive .firstSec .subSec .quoteSec{
+   width: 80%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.divFive .firstSec .subSec .quoteSec>p{
+   font-style: italic;
+   font-weight: 350;
+}
+
+.divFive .firstSec .subSec .quoteSec .name{
+   font-weight: bold;
+   margin-top: 8px;
+}
+
+.divFive .firstSec .subSec .quoteSec .rating{
+   font-size: x-small;
+   margin-top: 5px;
+}
+
+/* Div Five ends ========================== */
+
+
+/* Div Six starts ========================== */
+.divSix{
+   width: 100%;
+   min-height: 400px;
+   background: url(../img/overlay.jpg) fixed no-repeat;
+   background-size: cover;
+}
+
+.divSix .overlay{
+   width: 100%;
+   min-height: inherit;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-block: 50px;
+   background: linear-gradient(20deg, rgba(255, 0, 0, 0.6) , rgba(0, 0, 255, 0.6));
+}
+
+.divSix .overlay .mainSec{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+}
+
+.divSix .overlay .mainSec>h1{
+   font-size: var(--rem2);
+   color: white;
+   text-align: center;
+   line-height: 4rem;
+   text-transform: uppercase;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.divSix .overlay .mainSec>a{
+   color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding: 15px 50px 15px;
+   font-weight: bold;
+   text-decoration: none;
+   text-transform: uppercase;
+   margin-top: 10px;
+   position: relative;
+   background-color: transparent;
+   z-index: 1;
+   overflow: visible;
+}
+
+.divSix .overlay .mainSec>a::before{
+   content: " ";
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   width: calc(100% - 2px);
+   height: calc(100% - 2px);
+   z-index: -1;
+   border-top: 2px solid white;
+   border-left: 2px solid white;
+   transition: 0.5s;
+}
+
+.divSix .overlay .mainSec>a::after{
+   content: " ";
+   position: absolute;
+   top: 0%;
+   right: 0%;
+   width: calc(100% - 2px);
+   height: calc(100% - 2px);
+   z-index: -1;
+   border-right: 2px solid white;
+   border-bottom: 2px solid white;
+   transition: 0.5s;
+}
+
+.divSix .overlay .mainSec>a:hover::before{
+   margin-top: -5px;
+   margin-left: -5px;
+}
+
+.divSix .overlay .mainSec>a:hover::after{
+   margin-right: -5px;
+   margin-bottom: -5px;
+}
+
+/* Div Six ends ========================== */
+
+
+/* Div Seven starts ========================== */
+.divSeven{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-block: 50px;
+}
+
+.divSeven>section{
+   width: 85%;
+}
+
+.divSeven .firstSec{
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 30px;
+   overflow-y: hidden;
+}
+
+.divSeven .firstSec>a{
+   width: 40px;
+   height: 40px;
+   background-color: rgba(0, 0, 0, 0.05);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-inline: 10px;
+   color: gray;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+.divSeven .firstSec>a:hover{
+   transform: rotate(360deg);
+   background-color: rgba(0, 0, 0, 0.1);
+   color: gray;
+}
+
+.divSeven .firstSec>p>i{
+   color: blue;
+}
+
+.divSeven .firstSec>p>a{
+   color: blue;
+}
+/* Div Seven ends ========================== */
