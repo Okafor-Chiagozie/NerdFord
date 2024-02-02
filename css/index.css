@@ -59,6 +59,7 @@ p{
 .coverDiv .mainHeader .logoSec>i{
    font-size: xx-large;
    color: red;
+   overflow: hidden;
 }
 
 .coverDiv .mainHeader .logoSec>span{
