@@ -115,6 +115,7 @@ p{
    width: auto;
    height: auto;
    color: white;
+   overflow: hidden;
 }
 
 .coverDiv .mainHeader .hamburgerIcon>i{
