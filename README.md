@@ -1,6 +1,6 @@
 # School Website Template: NerdFord
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A professionally designed one-page school website template, perfect for showcasing courses, global campuses, facilities, testimonials, and contact details.
 
@@ -65,7 +65,7 @@ Explore the various sections of the template to visualize how it can be customiz
 - Open a pull request
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 Feel free to contact me at [ collincity111@gmail.com ] for any inquiries or feedback.
